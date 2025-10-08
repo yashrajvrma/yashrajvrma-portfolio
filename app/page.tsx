@@ -18,7 +18,7 @@ export default function Home() {
             <div className="text-lg">
               YASHRAJ VERMA <span className="text-sm">(he/him)</span>
             </div>
-            <div className="text-sm text-secondary">@yashrajvrma</div>
+            <div className="text-sm text-muted-foreground">@yashrajvrma</div>
           </div>
           <div className="border border-muted-foreground bg-accent p-1">
             <Image
@@ -48,9 +48,15 @@ export default function Home() {
           </button>
         </div>
 
-        <div></div>
         {/* bio section */}
-        <div></div>
+        <div className="flex flex-col pt-5 text-secondary">
+          <div>20 ★ Engineer ★ FullStack Dev</div>
+          <div>
+            Final year student pursuing B.E in Electronics and Telecommunication
+            Engineering
+          </div>
+        </div>
+
         {/* skill section  */}
         <div></div>
 

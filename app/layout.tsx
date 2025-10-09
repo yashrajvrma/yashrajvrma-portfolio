@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -47,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <meta property="og:url" content="your url" /> */}
+        <meta property="og:url" content="https://yashrajvrma.vercel.app/" />
         <meta name="og:locale" content="en_US" />
         <meta name="robots" content="index, follow, nocache" />
         <meta
@@ -105,6 +106,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

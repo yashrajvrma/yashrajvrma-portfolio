@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
+  ArrowLineUpRightIcon,
   EnvelopeSimpleIcon,
   GithubLogoIcon,
   LinkedinLogoIcon,
@@ -8,6 +9,8 @@ import {
   XLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import breezeImg from "@/public/breeze.jpg";
+import Link from "next/link";
 
 const skills = [
   "HTML",
@@ -31,18 +34,18 @@ const skills = [
 
 export default function Home() {
   return (
-    <div className="flex justify-center h-screen bg-foreground text-foreground text-sm">
-      <div className="flex flex-col max-w-md w-full h-full border border-x mt-20 px-2">
+    <div className="flex justify-center bg-foreground text-primary-foreground text-sm">
+      <div className="flex flex-col max-w-lg w-full h-full mt-20 px-2">
         {/* header and profile photo */}
         <div className="flex justify-between">
           <div className="flex flex-col justify-center">
-            <div className="text-lg text-accent">
+            <div className="text-lg font-semibold">
               YASHRAJ VERMA{" "}
-              <span className="text-sm text-primary-foreground">(he/him)</span>
+              <span className="text-sm text-secondary/85">(he/him)</span>
             </div>
             <div className="text-sm text-secondary/60">@yashrajvrma</div>
           </div>
-          <div className="border border-muted-foreground bg-accent p-1 h-[60px] w-[60px]">
+          <div className="border-2 border-border h-[60px] w-[60px]">
             <Image
               src="https://pbs.twimg.com/profile_images/1974875613837324288/ckIPGnPE_400x400.jpg"
               alt="profile-img"
@@ -63,7 +66,7 @@ export default function Home() {
         </div>
 
         {/* link section  */}
-        <div className="flex flex-col gap-y-1 mt-7">
+        <div className="flex flex-col gap-y-2 mt-7">
           <div className="text-xs text-secondary">LINKS</div>
           <div className="flex gap-x-4">
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
@@ -85,7 +88,7 @@ export default function Home() {
         </div>
 
         {/* skill section  */}
-        <div className="flex flex-col mt-7 gap-y-1">
+        <div className="flex flex-col mt-7 gap-y-2">
           <div className="text-xs text-secondary">SKILLS</div>
           <div className="flex flex-wrap gap-2">
             {skills.map((item, index) => (
@@ -101,10 +104,10 @@ export default function Home() {
         </div>
 
         {/* work exp */}
-        <div className="flex flex-col justify-center mt-7 gap-y-1">
+        <div className="flex flex-col justify-center mt-7 gap-y-2">
           <div className="text-xs text-secondary">WORK EXPERIENCE</div>
           <div className="flex justify-between gap-x-2 w-full">
-            <div className="border border-muted-foreground bg-accent p-1 h-[60px] w-[60px]">
+            <div className="border-2 border-border h-[60px] w-[60px]">
               <Image
                 src="https://media.licdn.com/dms/image/v2/D560BAQFaeBtUoOJ57w/company-logo_200_200/company-logo_200_200/0/1720175360812?e=1762992000&v=beta&t=F9equuaDXkWJp3LU8Cmjhhh9cDAiGwIkaQI-LNMYSdU"
                 alt="techluminix-img"
@@ -116,23 +119,94 @@ export default function Home() {
 
             <div className="flex flex-col gap-y-1 w-full h-full">
               <div className="flex flex-col">
-                <div className="text-primary-foreground">
-                  Full Stack Developer
-                </div>
+                <div className="font-semibold">Full Stack Developer</div>
                 <div className="text-xs text-secondary/60">
                   NOV 2024 - APR 2025
                 </div>
               </div>
-              <div className="text-primary-foreground/90">
-                Worked on building a school management system application to
-                manage students and their academics providing a seamless and
-                responsive user experience
+              <div className="flex flex-col gap-y-2 text-secondary/85 ">
+                <div>
+                  Worked on building a school management system application to
+                  manage students and their academics providing a seamless and
+                  responsive UI/UX.
+                </div>
+                <div>
+                  Solved critical challenges like data sync across multiple
+                  branches, ensuring real-time updates and consistency.
+                </div>
+                <div>
+                  Collaborated with a cross-functional team to design and
+                  implement features that significantly enhanced user experience
+                  and engagement.
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         {/* projects section */}
-        <div></div>
+        <div className="flex flex-col gap-y-2 mt-7">
+          <div className="text-xs text-secondary">PROJECTS</div>
+          <div className="flex flex-col gap-y-2">
+            <div className="border-2 border-border">
+              <Link href="https://www.breezeai.live/" target="_blank">
+                <Image
+                  src={breezeImg}
+                  width={700}
+                  height={700}
+                  alt="breeze-img"
+                  priority
+                  quality={100}
+                  className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                />
+              </Link>
+            </div>
+            <div className="flex justify-between items-center py-1">
+              <div className="font-semibold">
+                Breeze AI - AI Powered Docs Editor
+              </div>
+              <div className="flex justify-between gap-x-3">
+                <Link
+                  href="https://www.breezeai.live/"
+                  target="_blank"
+                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                >
+                  <div>LIVE</div>
+                  <span>
+                    <ArrowLineUpRightIcon size={15} />
+                  </span>
+                </Link>
+                <Link
+                  href="https://github.com/yashrajvrma/Breeze"
+                  target="_blank"
+                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                >
+                  <div>GITHUB</div>
+                  <span>
+                    <ArrowLineUpRightIcon size={15} />
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col gap-y-2 text-secondary/85">
+              <p>
+                Built an AI-powered Document Editor using Next.js, TanStack
+                Query, Shadcn UI and PostgreSQL, enabling real-time editing,
+                intelligent formatting and efficient state handling using
+                Zustand.
+              </p>
+              <p>
+                Integrated a Google Docs-like editor using TipTap and added
+                dynamic content generation, grammar assistance using Vercel AI
+                SDKs.
+              </p>
+              <p>
+                Implemented rate-limiting using Upstash Redis to optimize LLM
+                usage
+              </p>
+            </div>
+          </div>
+        </div>
         {/* footer section  */}
         <div></div>
       </div>

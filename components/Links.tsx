@@ -11,7 +11,7 @@ export default function Links() {
   return (
     <div className="flex flex-col gap-y-2 mt-8">
       <div className="text-xs text-secondary">LINKS</div>
-      <div className="flex justify-center items-center gap-x-3">
+      <div className="flex flex-wrap sm:flex-nowrap justify-center items-center sm:max-w-xl max-w-sm gap-x-3">
         <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary p-3">
           <Link
             href="https://drive.google.com/file/d/1FXuZi3ve1ZRpR6_DuLSlzfX7lRP8WOlt/view?usp=drivesdk"

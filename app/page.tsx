@@ -15,6 +15,7 @@ import postcnImg from "@/public/postcn.png";
 import boltHackathon from "@/public/bolt-hackathon.png";
 import excess from "@/public/excess.png";
 import chitpost from "@/public/chitpost.png";
+import anuvad from "@/public/anuvad.png";
 
 const skills = [
   "HTML",
@@ -340,6 +341,48 @@ export default function Home() {
               </div>
             </div>
 
+            {/* anuvad project  */}
+            <div className="flex flex-col gap-y-2">
+              <div className="border-2 border-border">
+                <Link
+                  href="https://github.com/yashrajvrma/anuvad-backend"
+                  target="_blank"
+                >
+                  <Image
+                    src={anuvad}
+                    width={1200}
+                    height={1200}
+                    alt="anuvad-img"
+                    priority
+                    quality={100}
+                    className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                  />
+                </Link>
+              </div>
+              <div className="flex justify-between py-1">
+                <div className="flex items-center font-semibold w-[80%]">
+                  Anuvad - Real time Language Translation
+                </div>
+                <Link
+                  href="https://github.com/yashrajvrma/anuvad-backend"
+                  target="_blank"
+                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default pt-0.5"
+                >
+                  <div>GITHUB</div>
+                  <span>
+                    <ArrowLineUpRightIcon size={15} />
+                  </span>
+                </Link>
+              </div>
+              <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
+                <p>
+                  Developed a real-time language translation platform supporting
+                  20+ languages using React.js, Tailwind CSS, Node.js, and
+                  OpenAI's TTS model for seamless multilingual communication.
+                </p>
+              </div>
+            </div>
+
             {/* bolt hackathon website  */}
             <div className="flex flex-col gap-y-2">
               <div className="border-2 border-border">
@@ -403,8 +446,11 @@ export default function Home() {
                       bolt.new
                     </Link>
                   </span>{" "}
-                  Hackathon website in Next.js and React using Shadcn components
-                  and Tailwind CSS.
+                  Hackathon website in Next.js and React.
+                </p>
+                <p>
+                  Used Shadcn components and Tailwind CSS for styling and framer
+                  motion for animations.
                 </p>
               </div>
             </div>
@@ -457,12 +503,11 @@ export default function Home() {
                   Typescript.
                 </p>
                 <p>
-                  Used Shadcn components, Tailwind CSS for styling and framer
-                  motion for the subtle animation.
+                  Used Shadcn, Tailwind CSS for styling and framer motion for
+                  the subtle animation.
                 </p>
               </div>
             </div>
-            {/* anuvad project  */}
           </div>
         </div>
         {/* footer section  */}

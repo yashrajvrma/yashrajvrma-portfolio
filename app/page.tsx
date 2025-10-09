@@ -4,6 +4,7 @@ import {
   ArrowLineUpRightIcon,
   EnvelopeSimpleIcon,
   GithubLogoIcon,
+  HeartIcon,
   LinkedinLogoIcon,
   ReadCvLogoIcon,
   XLogoIcon,
@@ -35,13 +36,13 @@ const skills = [
 export default function Home() {
   return (
     <div className="flex justify-center bg-foreground text-primary-foreground text-sm">
-      <div className="flex flex-col max-w-lg w-full h-full mt-20 px-2">
+      <div className="flex flex-col sm:max-w-lg max-w-sm w-full h-full mt-20 sm:px-2 px-4">
         {/* header and profile photo */}
         <div className="flex justify-between">
           <div className="flex flex-col justify-center">
             <div className="text-lg font-semibold">
               YASHRAJ VERMA
-              <span className="text-sm text-secondary/85">(he/him)</span>
+              <span className="pl-2 text-sm text-secondary/85">(he/him)</span>
             </div>
             <div className="text-sm text-secondary/60">@yashrajvrma</div>
           </div>
@@ -191,11 +192,11 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="flex justify-between items-center py-1">
-              <div className="font-semibold">
+            <div className="flex justify-between py-1">
+              <div className="flex items-center font-semibold w-[70%]">
                 Breeze AI - AI Powered Docs Editor
               </div>
-              <div className="flex justify-between gap-x-3">
+              <div className="flex sm:flex-row flex-col sm:justify-end justify-end items-center gap-y-0.5 gap-x-3 w-[30%]">
                 <Link
                   href="https://www.breezeai.live/"
                   target="_blank"
@@ -238,7 +239,15 @@ export default function Home() {
           </div>
         </div>
         {/* footer section  */}
-        <div></div>
+        <div className="flex flex-col justify-center my-20">
+          <div className="flex justify-center items-center text-secondary/85">
+            Made with{" "}
+            <span className="px-1">
+              <HeartIcon size={20} className="text-red-500" weight="fill" />
+            </span>{" "}
+            by Yashraj Verma
+          </div>
+        </div>
       </div>
     </div>
   );

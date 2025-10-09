@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between py-2">
       <div className="flex flex-col justify-center">
         <div className="text-lg font-semibold">
           YASHRAJ VERMA

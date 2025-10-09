@@ -82,7 +82,7 @@ export default function RootLayout({
 
         <meta
           property="og:image"
-          content="https://i.postimg.cc/mk47DcYZ/localhost-3000-3.png"
+          content="https://i.postimg.cc/tgzWv38x/localhost-3000-4.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -98,7 +98,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/mk47DcYZ/localhost-3000-3.png"
+          content="https://i.postimg.cc/tgzWv38x/localhost-3000-4.png"
         />
       </head>
       <body

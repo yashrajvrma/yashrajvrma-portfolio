@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
+const baseURL = "https://yashrajvrma.vercel.app/";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(baseURL),
   title: "Yashraj Verma - Full Stack Developer | Portfolio",
   description:
     "I'm Yashraj Verma a 20y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun.",
@@ -38,6 +41,35 @@ export const metadata: Metadata = {
     "Yashraj Verma Engineer",
     "Yashraj Verma Youtube",
   ],
+  twitter: {
+    card: "summary_large_image",
+    title: "Yashraj Verma - Full Stack Developer",
+    description:
+      "I'm Yashraj Verma a 20 y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun.",
+    images: [
+      {
+        url: `${baseURL}/assets/images/twitter-og.png`,
+        width: 1200,
+        height: 630,
+        alt: "Yashraj Verma Portfolio",
+      },
+    ],
+  },
+  openGraph: {
+    title: "Yashraj Verma - Full Stack Developer",
+    url: baseURL,
+    type: "website",
+    description:
+      "I'm Yashraj Verma a 20 y/o developer pursuing B.E in Electronics and Telecommunication engineering. I love to build cool products that makes peoples live easier. I play, read books and create content for fun.",
+    images: [
+      {
+        url: `${baseURL}/assets/images/twitter-og.png`,
+        width: 1200,
+        height: 630,
+        alt: "Yashraj Verma Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

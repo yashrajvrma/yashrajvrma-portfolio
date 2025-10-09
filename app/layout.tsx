@@ -79,9 +79,10 @@ export default function RootLayout({
           name="keywords"
           content="Full Stack Developer, React Developer, Node.js Developer, TypeScript Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Developer,Software Engineer, Portfolio,India, Yashraj Verma, Yashraj, Stealth Startup, Founding Engineer, Hackathon, Thakur College of Engineering and Technology, TCET, tcet, Best Portfolio, Minimalist Portfolio, Developer Portfolio, Student Portfolio, Tech Portfolio, Modern Portfolio, Clean Portfolio, Professional Portfolio, Portfolio Website, Personal Website, Developer Website, Breeze, Breeze AI, AI Powered Document Editor, Docs Editor, Word Docs Editor, Editor, Microsoft Word, Docx, AI"
         />
+
         <meta
           property="og:image"
-          content="https://pbs.twimg.com/profile_images/1974875613837324288/ckIPGnPE_400x400.jpg"
+          content="https://i.postimg.cc/mk47DcYZ/localhost-3000-3.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />

@@ -13,6 +13,7 @@ import Link from "next/link";
 import breezeImg from "@/public/breeze.jpg";
 import postcnImg from "@/public/postcn.png";
 import boltHackathon from "@/public/bolt-hackathon.png";
+import excess from "@/public/excess.png";
 
 const skills = [
   "HTML",
@@ -289,6 +290,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
             {/* chitpost project  */}
             {/* <div className="flex flex-col gap-y-2">
               <div className="border-2 border-border">
@@ -402,15 +404,16 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
             {/* xcess luggage website  */}
             <div className="flex flex-col gap-y-2">
               <div className="border-2 border-border">
-                <Link href="https://bolt-hacky.vercel.app/" target="_blank">
+                <Link href="https://excess-one.vercel.app/" target="_blank">
                   <Image
-                    src={boltHackathon}
+                    src={excess}
                     width={1200}
                     height={1200}
-                    alt="boltHackathon-img"
+                    alt="excess-img"
                     priority
                     quality={100}
                     className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
@@ -419,20 +422,11 @@ export default function Home() {
               </div>
               <div className="flex justify-between py-1">
                 <div className="flex items-center font-semibold w-[70%]">
-                  Landing Page for{" "}
-                  <span>
-                    <Link
-                      className="hover:underline font-semibold text-blue-400 hover:text-blue-500 hover:italic pl-2"
-                      href="https://bolt.new/"
-                      target="_blank"
-                    >
-                      Bolt
-                    </Link>
-                  </span>
+                  Frontend Design for Xcess Luggage{" "}
                 </div>
                 <div className="flex sm:flex-row flex-col sm:justify-end justify-end items-center gap-y-0.5 gap-x-3 w-[30%]">
                   <Link
-                    href="https://bolt-hacky.vercel.app/"
+                    href="https://excess-one.vercel.app/"
                     target="_blank"
                     className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
                   >
@@ -442,7 +436,7 @@ export default function Home() {
                     </span>
                   </Link>
                   <Link
-                    href="https://github.com/yashrajvrma/Bolt-hackathon"
+                    href="https://github.com/yashrajvrma/excess-frontend"
                     target="_blank"
                     className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
                   >
@@ -455,18 +449,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
                 <p>
-                  Build a landing page design for{" "}
-                  <span>
-                    <Link
-                      className="hover:underline font-semibold text-blue-400 hover:text-blue-500 hover:italic"
-                      href="https://bolt.new/"
-                      target="_blank"
-                    >
-                      bolt.new
-                    </Link>
-                  </span>{" "}
-                  Hackathon website in Next.js and React using Shadcn components
-                  and Tailwind CSS.
+                  Built the entire frontend of Xcess Luggage in Vite React and
+                  Typescript.
+                </p>
+                <p>
+                  Used Shadcn components, Tailwind CSS for styling and framer
+                  motion for the subtle animation.
                 </p>
               </div>
             </div>

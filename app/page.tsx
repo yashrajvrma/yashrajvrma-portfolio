@@ -14,6 +14,7 @@ import breezeImg from "@/public/breeze.jpg";
 import postcnImg from "@/public/postcn.png";
 import boltHackathon from "@/public/bolt-hackathon.png";
 import excess from "@/public/excess.png";
+import chitpost from "@/public/chitpost.png";
 
 const skills = [
   "HTML",
@@ -292,17 +293,17 @@ export default function Home() {
             </div>
 
             {/* chitpost project  */}
-            {/* <div className="flex flex-col gap-y-2">
+            <div className="flex flex-col gap-y-2">
               <div className="border-2 border-border">
                 <Link
                   href="https://github.com/yashrajvrma/mock-api"
                   target="_blank"
                 >
                   <Image
-                    src={postcnImg}
+                    src={chitpost}
                     width={1200}
                     height={1200}
-                    alt="postcn-img"
+                    alt="chitpost-img"
                     priority
                     quality={100}
                     className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
@@ -311,10 +312,10 @@ export default function Home() {
               </div>
               <div className="flex justify-between py-1">
                 <div className="flex items-center font-semibold w-[80%]">
-                  Postcn - Create Mock API's with simple text prompt
+                  ChitPost - A Minimalist blog app
                 </div>
                 <Link
-                  href="https://github.com/yashrajvrma/mock-api"
+                  href="https://github.com/yashrajvrma/ChitPost-blog"
                   target="_blank"
                   className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default pt-0.5"
                 >
@@ -326,15 +327,18 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
                 <p>
-                  Built an AI Agent that lets you create Mock API collection
-                  with just simple text prompt.
+                  Built a minimalist blogging platform using React.js,
+                  TypeScript, Cloudflare Workers, and PostgreSQL for persistent
+                  post storage, allowing users to create, publish, and engage
+                  with content.
                 </p>
                 <p>
-                  You can also test this API's in realtime and share it wth your
-                  friends.
+                  Integrated Novel AI editor for a seamless blog creation
+                  experience and Cloudinary for efficient cloud-based image
+                  storage.
                 </p>
               </div>
-            </div> */}
+            </div>
 
             {/* bolt hackathon website  */}
             <div className="flex flex-col gap-y-2">

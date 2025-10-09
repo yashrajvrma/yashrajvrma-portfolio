@@ -6,7 +6,7 @@ export default function Bio() {
       <div>20 ★ Engineer ★ FullStack Developer</div>
       <br />
       <div>
-        Hi there, I'm Yashraj a final year undergrad{" "}
+        Hi there, I&apos;m Yashraj a final year undergrad{" "}
         <span>
           <Link
             className="hover:underline font-semibold text-blue-400 hover:text-blue-500"

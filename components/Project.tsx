@@ -92,7 +92,7 @@ export default function Project() {
           </div>
           <div className="flex justify-between py-1">
             <div className="flex items-center font-semibold w-[80%]">
-              Postcn - Create Mock API's with simple text prompt
+              Postcn - Create Mock API&apos;s with simple text prompt
             </div>
             <Link
               href="https://github.com/yashrajvrma/mock-api"
@@ -111,8 +111,8 @@ export default function Project() {
               just simple text prompt.
             </p>
             <p>
-              You can also test this API's in realtime and share it wth your
-              friends.
+              You can also test this API&apos;s in realtime and share it wth
+              your friends.
             </p>
           </div>
         </div>
@@ -199,8 +199,8 @@ export default function Project() {
           <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
             <p>
               Developed a real-time language translation platform supporting 20+
-              languages using React.js, Tailwind CSS, Node.js, and OpenAI's TTS
-              model for seamless multilingual communication.
+              languages using React.js, Tailwind CSS, Node.js, and OpenAI&apos;s
+              TTS model for seamless multilingual communication.
             </p>
           </div>
         </div>

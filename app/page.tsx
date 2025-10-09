@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   ArrowLineUpRightIcon,
   EnvelopeSimpleIcon,
@@ -10,20 +9,27 @@ import {
   XLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import breezeImg from "@/public/breeze.jpg";
 import Link from "next/link";
+import breezeImg from "@/public/breeze.jpg";
+import postcnImg from "@/public/postcn.png";
+import boltHackathon from "@/public/bolt-hackathon.png";
 
 const skills = [
   "HTML",
   "CSS",
+  "Tailwind CSS",
   "JavaScript",
   "TypeScript",
   "Python",
   "React",
+  "Redux",
+  "Zustand",
+  "Tanstack Query",
+  "Shadcn",
   "Next.js",
   "Express.js",
-  "Tailwind CSS",
   "Node.js",
+  "MongoDB",
   "SQL",
   "Prisma",
   "PostgreSQL",
@@ -67,7 +73,7 @@ export default function Home() {
         </div>
 
         {/* link section  */}
-        <div className="flex flex-col gap-y-2 mt-7">
+        <div className="flex flex-col gap-y-2 mt-8">
           <div className="text-xs text-secondary">LINKS</div>
           <div className="flex gap-x-4">
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
@@ -119,7 +125,7 @@ export default function Home() {
         </div>
 
         {/* skill section  */}
-        <div className="flex flex-col mt-7 gap-y-2">
+        <div className="flex flex-col mt-8 gap-y-2">
           <div className="text-xs text-secondary">SKILLS</div>
           <div className="flex flex-wrap gap-2">
             {skills.map((item, index) => (
@@ -135,7 +141,7 @@ export default function Home() {
         </div>
 
         {/* work exp */}
-        <div className="flex flex-col justify-center mt-7 gap-y-2">
+        <div className="flex flex-col justify-center mt-8 gap-y-2">
           <div className="text-xs text-secondary">WORK EXPERIENCE</div>
           <div className="flex justify-between gap-x-2 w-full">
             <div className="border-2 border-border h-[60px] w-[60px]">
@@ -176,41 +182,95 @@ export default function Home() {
         </div>
 
         {/* projects section */}
-        <div className="flex flex-col gap-y-2 mt-7">
+        <div className="flex flex-col gap-y-2 mt-8">
           <div className="text-xs text-secondary">PROJECTS</div>
-          <div className="flex flex-col gap-y-2">
-            <div className="border-2 border-border">
-              <Link href="https://www.breezeai.live/" target="_blank">
-                <Image
-                  src={breezeImg}
-                  width={700}
-                  height={700}
-                  alt="breeze-img"
-                  priority
-                  quality={100}
-                  className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
-                />
-              </Link>
-            </div>
-            <div className="flex justify-between py-1">
-              <div className="flex items-center font-semibold w-[70%]">
-                Breeze AI - AI Powered Docs Editor
-              </div>
-              <div className="flex sm:flex-row flex-col sm:justify-end justify-end items-center gap-y-0.5 gap-x-3 w-[30%]">
-                <Link
-                  href="https://www.breezeai.live/"
-                  target="_blank"
-                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
-                >
-                  <div>LIVE</div>
-                  <span>
-                    <ArrowLineUpRightIcon size={15} />
-                  </span>
+          <div className="flex flex-col gap-y-10">
+            {/* breeze project  */}
+            <div className="flex flex-col gap-y-2">
+              <div className="border-2 border-border">
+                <Link href="https://www.breezeai.live/" target="_blank">
+                  <Image
+                    src={breezeImg}
+                    width={1200}
+                    height={1200}
+                    alt="breeze-img"
+                    priority
+                    quality={100}
+                    className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                  />
                 </Link>
+              </div>
+              <div className="flex justify-between py-1">
+                <div className="flex items-center font-semibold w-[70%]">
+                  Breeze - AI Powered Docs Editor
+                </div>
+                <div className="flex sm:flex-row flex-col sm:justify-end justify-end items-center gap-y-0.5 gap-x-3 w-[30%]">
+                  <Link
+                    href="https://www.breezeai.live/"
+                    target="_blank"
+                    className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                  >
+                    <div>LIVE</div>
+                    <span>
+                      <ArrowLineUpRightIcon size={15} />
+                    </span>
+                  </Link>
+                  <Link
+                    href="https://github.com/yashrajvrma/Breeze"
+                    target="_blank"
+                    className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                  >
+                    <div>GITHUB</div>
+                    <span>
+                      <ArrowLineUpRightIcon size={15} />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
+                <p>
+                  Built an AI-powered Document Editor using Next.js, TanStack
+                  Query, Shadcn UI and PostgreSQL, enabling real-time editing,
+                  intelligent formatting and efficient state handling using
+                  Zustand.
+                </p>
+                <p>
+                  Integrated a Google Docs-like editor using TipTap and added
+                  dynamic content generation, grammar assistance using Vercel AI
+                  SDKs.
+                </p>
+                <p>
+                  Implemented rate-limiting using Upstash Redis to optimize LLM
+                  usage
+                </p>
+              </div>
+            </div>
+            {/* mock api project */}
+            <div className="flex flex-col gap-y-2">
+              <div className="border-2 border-border">
                 <Link
-                  href="https://github.com/yashrajvrma/Breeze"
+                  href="https://github.com/yashrajvrma/mock-api"
                   target="_blank"
-                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                >
+                  <Image
+                    src={postcnImg}
+                    width={1200}
+                    height={1200}
+                    alt="postcn-img"
+                    priority
+                    quality={100}
+                    className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                  />
+                </Link>
+              </div>
+              <div className="flex justify-between py-1">
+                <div className="flex items-center font-semibold w-[80%]">
+                  Postcn - Create Mock API's with simple text prompt
+                </div>
+                <Link
+                  href="https://github.com/yashrajvrma/mock-api"
+                  target="_blank"
+                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default pt-0.5"
                 >
                   <div>GITHUB</div>
                   <span>
@@ -218,24 +278,199 @@ export default function Home() {
                   </span>
                 </Link>
               </div>
+              <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
+                <p>
+                  Built an AI Agent that lets you create Mock API collection
+                  with just simple text prompt.
+                </p>
+                <p>
+                  You can also test this API's in realtime and share it wth your
+                  friends.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col gap-y-2 text-secondary/85">
-              <p>
-                Built an AI-powered Document Editor using Next.js, TanStack
-                Query, Shadcn UI and PostgreSQL, enabling real-time editing,
-                intelligent formatting and efficient state handling using
-                Zustand.
-              </p>
-              <p>
-                Integrated a Google Docs-like editor using TipTap and added
-                dynamic content generation, grammar assistance using Vercel AI
-                SDKs.
-              </p>
-              <p>
-                Implemented rate-limiting using Upstash Redis to optimize LLM
-                usage
-              </p>
+            {/* chitpost project  */}
+            {/* <div className="flex flex-col gap-y-2">
+              <div className="border-2 border-border">
+                <Link
+                  href="https://github.com/yashrajvrma/mock-api"
+                  target="_blank"
+                >
+                  <Image
+                    src={postcnImg}
+                    width={1200}
+                    height={1200}
+                    alt="postcn-img"
+                    priority
+                    quality={100}
+                    className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                  />
+                </Link>
+              </div>
+              <div className="flex justify-between py-1">
+                <div className="flex items-center font-semibold w-[80%]">
+                  Postcn - Create Mock API's with simple text prompt
+                </div>
+                <Link
+                  href="https://github.com/yashrajvrma/mock-api"
+                  target="_blank"
+                  className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default pt-0.5"
+                >
+                  <div>GITHUB</div>
+                  <span>
+                    <ArrowLineUpRightIcon size={15} />
+                  </span>
+                </Link>
+              </div>
+              <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
+                <p>
+                  Built an AI Agent that lets you create Mock API collection
+                  with just simple text prompt.
+                </p>
+                <p>
+                  You can also test this API's in realtime and share it wth your
+                  friends.
+                </p>
+              </div>
+            </div> */}
+
+            {/* bolt hackathon website  */}
+            <div className="flex flex-col gap-y-2">
+              <div className="border-2 border-border">
+                <Link href="https://bolt-hacky.vercel.app/" target="_blank">
+                  <Image
+                    src={boltHackathon}
+                    width={1200}
+                    height={1200}
+                    alt="boltHackathon-img"
+                    priority
+                    quality={100}
+                    className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                  />
+                </Link>
+              </div>
+              <div className="flex justify-between py-1">
+                <div className="flex items-center font-semibold w-[70%]">
+                  Landing Page for{" "}
+                  <span>
+                    <Link
+                      className="hover:underline font-semibold text-blue-400 hover:text-blue-500 hover:italic pl-2"
+                      href="https://bolt.new/"
+                      target="_blank"
+                    >
+                      Bolt
+                    </Link>
+                  </span>
+                </div>
+                <div className="flex sm:flex-row flex-col sm:justify-end justify-end items-center gap-y-0.5 gap-x-3 w-[30%]">
+                  <Link
+                    href="https://bolt-hacky.vercel.app/"
+                    target="_blank"
+                    className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                  >
+                    <div>LIVE</div>
+                    <span>
+                      <ArrowLineUpRightIcon size={15} />
+                    </span>
+                  </Link>
+                  <Link
+                    href="https://github.com/yashrajvrma/Bolt-hackathon"
+                    target="_blank"
+                    className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                  >
+                    <div>GITHUB</div>
+                    <span>
+                      <ArrowLineUpRightIcon size={15} />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
+                <p>
+                  Build a landing page design for{" "}
+                  <span>
+                    <Link
+                      className="hover:underline font-semibold text-blue-400 hover:text-blue-500 hover:italic"
+                      href="https://bolt.new/"
+                      target="_blank"
+                    >
+                      bolt.new
+                    </Link>
+                  </span>{" "}
+                  Hackathon website in Next.js and React using Shadcn components
+                  and Tailwind CSS.
+                </p>
+              </div>
             </div>
+            {/* xcess luggage website  */}
+            <div className="flex flex-col gap-y-2">
+              <div className="border-2 border-border">
+                <Link href="https://bolt-hacky.vercel.app/" target="_blank">
+                  <Image
+                    src={boltHackathon}
+                    width={1200}
+                    height={1200}
+                    alt="boltHackathon-img"
+                    priority
+                    quality={100}
+                    className="w-full h-ful hover:scale-102 hover:border-2 hover:border-border transition duration-200 ease-in-out transform"
+                  />
+                </Link>
+              </div>
+              <div className="flex justify-between py-1">
+                <div className="flex items-center font-semibold w-[70%]">
+                  Landing Page for{" "}
+                  <span>
+                    <Link
+                      className="hover:underline font-semibold text-blue-400 hover:text-blue-500 hover:italic pl-2"
+                      href="https://bolt.new/"
+                      target="_blank"
+                    >
+                      Bolt
+                    </Link>
+                  </span>
+                </div>
+                <div className="flex sm:flex-row flex-col sm:justify-end justify-end items-center gap-y-0.5 gap-x-3 w-[30%]">
+                  <Link
+                    href="https://bolt-hacky.vercel.app/"
+                    target="_blank"
+                    className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                  >
+                    <div>LIVE</div>
+                    <span>
+                      <ArrowLineUpRightIcon size={15} />
+                    </span>
+                  </Link>
+                  <Link
+                    href="https://github.com/yashrajvrma/Bolt-hackathon"
+                    target="_blank"
+                    className="flex justify-center gap-x-0.5 text-xs hover:scale-105 transition duration-200 ease-in-out transform cursor-default"
+                  >
+                    <div>GITHUB</div>
+                    <span>
+                      <ArrowLineUpRightIcon size={15} />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <div className="flex flex-col gap-y-2 text-secondary/85 text-justify">
+                <p>
+                  Build a landing page design for{" "}
+                  <span>
+                    <Link
+                      className="hover:underline font-semibold text-blue-400 hover:text-blue-500 hover:italic"
+                      href="https://bolt.new/"
+                      target="_blank"
+                    >
+                      bolt.new
+                    </Link>
+                  </span>{" "}
+                  Hackathon website in Next.js and React using Shadcn components
+                  and Tailwind CSS.
+                </p>
+              </div>
+            </div>
+            {/* anuvad project  */}
           </div>
         </div>
         {/* footer section  */}

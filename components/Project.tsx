@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import breezeImg from "@/public/breeze.jpg";
-import postcnImg from "@/public/postcn.png";
-import boltHackathon from "@/public/bolt-hackathon.png";
-import excess from "@/public/excess.png";
-import chitpost from "@/public/chitpost.png";
-import anuvad from "@/public/anuvad.png";
+import breezeImg from "@/public/images/breeze.jpg";
+import postcnImg from "@/public/images/postcn.png";
+import boltHackathon from "@/public/images/bolt-hackathon.png";
+import excess from "@/public/images/excess.png";
+import chitpost from "@/public/images/chitpost.png";
+import anuvad from "@/public/images/anuvad.png";
 import { ArrowLineUpRightIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function Project() {

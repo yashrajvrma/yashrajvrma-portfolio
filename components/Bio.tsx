@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Bio() {
   return (
     <div className="flex flex-col pt-5 text-secondary">
-      <div>20 ★ Engineer ★ FullStack Dev</div>
+      <div>20 ★ Engineer ★ FullStack Developer</div>
       <br />
       <div>
         Hi there, I'm Yashraj a final year undergrad{" "}

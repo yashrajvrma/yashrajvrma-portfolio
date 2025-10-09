@@ -40,7 +40,7 @@ export default function Home() {
         <div className="flex justify-between">
           <div className="flex flex-col justify-center">
             <div className="text-lg font-semibold">
-              YASHRAJ VERMA{" "}
+              YASHRAJ VERMA
               <span className="text-sm text-secondary/85">(he/him)</span>
             </div>
             <div className="text-sm text-secondary/60">@yashrajvrma</div>
@@ -70,19 +70,49 @@ export default function Home() {
           <div className="text-xs text-secondary">LINKS</div>
           <div className="flex gap-x-4">
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
-              <ReadCvLogoIcon size={24} />
+              <Link
+                href="https://drive.google.com/file/d/1FXuZi3ve1ZRpR6_DuLSlzfX7lRP8WOlt/view?usp=drivesdk"
+                target="_blank"
+                className="hover:scale-125 transition duration-200 ease-in-out transform"
+              >
+                <ReadCvLogoIcon size={24} />
+              </Link>
             </button>
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
-              <EnvelopeSimpleIcon size={24} />
+              <Link
+                href="mailto:yashrajv.work@gmail.com"
+                target="_blank"
+                className="hover:scale-125 transition duration-200 ease-in-out transform"
+              >
+                <EnvelopeSimpleIcon size={24} />
+              </Link>
             </button>
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
-              <GithubLogoIcon size={24} />
+              <Link
+                href="https://github.com/yashrajvrma"
+                target="_blank"
+                className="hover:scale-125 transition duration-200 ease-in-out transform"
+              >
+                <GithubLogoIcon size={24} />
+              </Link>
             </button>
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
-              <XLogoIcon size={24} />
+              <Link
+                href="https://x.com/yashrajvrma"
+                target="_blank"
+                className="hover:scale-125 transition duration-200 ease-in-out transform"
+              >
+                <XLogoIcon size={24} />
+              </Link>
             </button>
             <button className="flex justify-center items-center rounded-none hover:bg-muted-foreground text-secondary h-12 w-12">
-              <LinkedinLogoIcon size={24} />
+              <Link
+                href="https://www.linkedin.com/in/theyashrajverma/"
+                target="_blank"
+                className="hover:scale-125 transition duration-200 ease-in-out transform"
+              >
+                <LinkedinLogoIcon size={24} />
+              </Link>
             </button>
           </div>
         </div>

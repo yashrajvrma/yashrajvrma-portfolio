@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import breezeImg from "@/public/assets/images/breeze.jpg";
-import postcnImg from "@/public/assets/images/postcn.png";
+import postcnImg from "@/public/assets/images/postcn-img.png";
 import boltHackathon from "@/public/assets/images/bolt-hackathon.png";
 import excess from "@/public/assets/images/excess.png";
 import chitpost from "@/public/assets/images/chitpost.png";
@@ -121,7 +121,7 @@ export default function Project() {
         <div className="flex flex-col gap-y-2">
           <div className="border-2 border-border">
             <Link
-              href="https://github.com/yashrajvrma/mock-api"
+              href="https://github.com/yashrajvrma/ChitPost-blog"
               target="_blank"
             >
               <Image

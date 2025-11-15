@@ -1,4 +1,5 @@
 import Image from "next/image";
+import linkedin from "../public/assets/images/linkedin.webp";
 
 export default function WorkExperience() {
   return (
@@ -7,7 +8,7 @@ export default function WorkExperience() {
       <div className="flex justify-between gap-x-2.5 w-full">
         <div className="border-2 border-border h-[60px] w-[60px]">
           <Image
-            src="https://media.licdn.com/dms/image/v2/D560BAQFaeBtUoOJ57w/company-logo_200_200/company-logo_200_200/0/1720175360812?e=1762992000&v=beta&t=F9equuaDXkWJp3LU8Cmjhhh9cDAiGwIkaQI-LNMYSdU"
+            src={linkedin}
             alt="techluminix-img"
             width={60}
             height={60}
